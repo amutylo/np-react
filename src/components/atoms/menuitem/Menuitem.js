@@ -3,7 +3,7 @@ import Icon from '../icon/Icon';
 
 const Menuitem = props => (
     <li>
-      <Icon type="fa" iconClass=/>
+      <Icon type="fa" iconClass="" />
       <a
         href={ `/app/page${ props.url }` }
         data-drupal-link-system-path={ props.path }
