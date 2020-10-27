@@ -20,7 +20,7 @@ const Leftmenu = props => {
 
   return (
 
-  <ul className="aside-menu reset-list">
+  <ul className="asideMenu reset-list">
     {
 
     items && items.map((item, index) => {

@@ -37,6 +37,7 @@ const CategoryMenu = props => {
                         url={ item.entityUrl.path }
                         label={ item.entityLabel }
                         iconClass={ item.fieldIcon }
+                        iconPosClass="left-icon"
                         key={ index }
                         path={ item.entityUrl.path }
                       />
