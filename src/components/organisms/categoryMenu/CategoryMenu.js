@@ -15,15 +15,17 @@ const homeCategory = {
 const CategoryMenu = props => {
   const[items, setItems] = useState();
 
-  useEffect(() => {
+  useEffect(
+    () => {
     Api.getCategoryMenuItems()
     .then(
       res => {
-        const categoryItems = res.data.data.taxonomyTermQuery.entities;
+        const categoryItems = res.data.data && res.data.data.taxonomyTermQuery && res.data.data.taxonomyTermQuery.entities;
+
 				categoryItems.unshift(homeCategory);
 				setItems(categoryItems);
 		});
-    }
+    }, []
   );
 
   return (
@@ -34,6 +36,7 @@ const CategoryMenu = props => {
             return <Menuitem
                         url={ item.entityUrl.path }
                         label={ item.entityLabel }
+                        iconClass={ item.fieldIcon }
                         key={ index }
                         path={ item.entityUrl.path }
                       />

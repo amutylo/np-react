@@ -15,7 +15,7 @@ const Leftmenu = props => {
             : [];
         setItems(links);
 		});
-    }
+    }, []
   );
 
   return (
@@ -29,6 +29,7 @@ const Leftmenu = props => {
 									label={ item.label }
                   key={ index }
 									path={ item.url.path }
+                  type="fa"
 								/>
     })}
   </ul>);
