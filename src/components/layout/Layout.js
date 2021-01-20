@@ -6,7 +6,7 @@ import Wrapper from '../organisms/wrapper/Wrapper';
 import Content from '../organisms/content/Content';
 import Logo from '../organisms/logo/Logo';
 import Image from '../atoms/image/Image';
-import logo from '../../Assets/logo.png';
+import logo from '../../assets/logo.png';
 import CategoryMenu from '../organisms/categoryMenu/CategoryMenu';
 import Aside from '../organisms/aside/Aside';
 import Footer from '../organisms/footer/Footer';
