@@ -151,7 +151,7 @@ button {
  padding: 30px 30px 60px;
 }
 
-@media (max-width: 1365px) {
+/* @media (max-width: 1365px) {
   .sidebar {
     transform: translateX(-100%);
     width: 420px;
@@ -175,7 +175,7 @@ button {
     min-height: 100%;
     padding-top: 100px;
   }
-}
+} */
 
 @media (max-width: 767px) {
   .scroll-wrapper {
